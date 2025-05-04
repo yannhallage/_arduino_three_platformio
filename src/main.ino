@@ -29,7 +29,7 @@ LiquidCrystal_I2C lcd(LCD_ADDR, LCD_COLUMNS, LCD_ROWS);
 #define red 13
 #define orange 12
 #define vert 11
-#define button 10;
+#define buzzer 10
 String text = "FERMER !";
 
 int tableCouleur[] = {red, orange, vert};
@@ -45,6 +45,8 @@ void setup()
   pinMode(red, OUTPUT);
   pinMode(orange, OUTPUT);
   pinMode(vert, OUTPUT);
+  pinMode(buzzer, OUTPUT);
+  
 
   lcd.init();      // Initialise l'écran
   lcd.backlight(); // Active le rétroéclairage
@@ -53,6 +55,7 @@ void setup()
   lcd.print(text);
 
   digitalWrite(red, HIGH);
+  digitalWrite(buzzer , HIGH);
 }
 
 void loop()

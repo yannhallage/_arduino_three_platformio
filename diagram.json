@@ -3,48 +3,48 @@
   "author": "Yann Hallage",
   "editor": "wokwi",
   "parts": [
-    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -175.8, "left": -458, "attrs": {} },
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -156.6, "left": -429.2, "attrs": {} },
     { "type": "wokwi-arduino-uno", "id": "uno", "top": 0.6, "left": -0.6, "attrs": {} },
     {
       "type": "wokwi-led",
       "id": "led1",
-      "top": -147.6,
-      "left": -418.6,
+      "top": -128.4,
+      "left": -389.8,
       "attrs": { "color": "red" }
     },
     {
       "type": "wokwi-led",
       "id": "led2",
-      "top": -147.6,
-      "left": -332.2,
+      "top": -128.4,
+      "left": -303.4,
       "attrs": { "color": "orange" }
     },
     {
       "type": "wokwi-led",
       "id": "led3",
-      "top": -147.6,
-      "left": -236.2,
+      "top": -128.4,
+      "left": -207.4,
       "attrs": { "color": "limegreen" }
     },
     {
       "type": "wokwi-resistor",
       "id": "r1",
-      "top": -101.65,
-      "left": -307.2,
+      "top": -82.45,
+      "left": -278.4,
       "attrs": { "value": "1000" }
     },
     {
       "type": "wokwi-resistor",
       "id": "r2",
-      "top": -101.65,
-      "left": -393.6,
+      "top": -82.45,
+      "left": -364.8,
       "attrs": { "value": "1000" }
     },
     {
       "type": "wokwi-resistor",
       "id": "r3",
-      "top": -101.65,
-      "left": -211.2,
+      "top": -82.45,
+      "left": -182.4,
       "attrs": { "value": "1000" }
     },
     {
@@ -75,6 +75,16 @@
     [ "lcd1:VCC", "bb1:bn.19", "red", [ "h-201.6", "v499.3", "h278.4" ] ],
     [ "lcd1:SDA", "uno:A4", "green", [ "h-182.4", "v432.2", "h643.2" ] ],
     [ "lcd1:SCL", "uno:A5", "green", [ "h-163.2", "v422.7", "h643.2" ] ],
+    [ "keypad1:C4", "uno:2", "green", [ "v124.8", "h-77.1" ] ],
+    [ "keypad1:C3", "uno:3", "green", [ "v115.2", "h-86.55" ] ],
+    [ "keypad1:C2", "uno:4", "green", [ "v105.6", "h-86.4" ] ],
+    [ "keypad1:C1", "uno:5", "green", [ "v86.4", "h-76.9" ] ],
+    [ "keypad1:R4", "uno:6", "green", [ "v76.8", "h-86.6" ] ],
+    [ "keypad1:R3", "uno:7", "green", [ "v67.2", "h-77.1" ] ],
+    [ "keypad1:R2", "uno:8", "red", [ "v57.6", "h-86.8" ] ],
+    [ "keypad1:R1", "uno:9", "yellow", [ "v38.4", "h-86.4", "v144" ] ],
+    [ "led1:A", "bb1:5t.c", "", [ "$bb" ] ],
+    [ "led1:C", "bb1:4t.c", "", [ "$bb" ] ],
     [ "led2:A", "bb1:14t.c", "", [ "$bb" ] ],
     [ "led2:C", "bb1:13t.c", "", [ "$bb" ] ],
     [ "led3:A", "bb1:24t.c", "", [ "$bb" ] ],
@@ -84,15 +94,7 @@
     [ "r2:1", "bb1:5t.d", "", [ "$bb" ] ],
     [ "r2:2", "bb1:11t.d", "", [ "$bb" ] ],
     [ "r3:1", "bb1:24t.d", "", [ "$bb" ] ],
-    [ "r3:2", "bb1:30t.d", "", [ "$bb" ] ],
-    [ "keypad1:C4", "uno:2", "green", [ "v124.8", "h-77.1" ] ],
-    [ "keypad1:C3", "uno:3", "green", [ "v115.2", "h-86.55" ] ],
-    [ "keypad1:C2", "uno:4", "green", [ "v105.6", "h-86.4" ] ],
-    [ "keypad1:C1", "uno:5", "green", [ "v86.4", "h-76.9" ] ],
-    [ "keypad1:R4", "uno:6", "green", [ "v76.8", "h-86.6" ] ],
-    [ "keypad1:R3", "uno:7", "green", [ "v67.2", "h-77.1" ] ],
-    [ "keypad1:R2", "uno:8", "red", [ "v57.6", "h-86.8" ] ],
-    [ "keypad1:R1", "uno:9", "yellow", [ "v38.4", "h-86.4", "v144" ] ]
+    [ "r3:2", "bb1:30t.d", "", [ "$bb" ] ]
   ],
   "dependencies": {}
 }
