@@ -6,7 +6,7 @@ Ce projet Arduino met en œuvre un système de gestion de feux de signalisation 
 
 Voici le schéma de câblage utilisé pour ce projet :
 
-![Schéma Arduino - Feux de signalisation avec LCD](./arduinos.png)
+![Schéma Arduino - Feux de signalisation avec LCD](.[/arduinos.png](https://drive.google.com/file/d/14jCa_rOEBIcM9LQblAxutlkMZ0suFivh/view?usp=drive_link))
 
 ### Composants utilisés
 
