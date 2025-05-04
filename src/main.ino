@@ -51,26 +51,33 @@ void setup()
 
   lcd.setCursor(5, 0); // Colonne 5, ligne 0
   lcd.print(text);
+
+  digitalWrite(red, HIGH);
 }
 
 void loop()
 {
 
-  digitalWrite(red, tst);
   char const variable_no = 'D';
+  char const variable_reset = 'C';
   char key = keypad.getKey(); // Lire la touche pressée
 
   if (key)
   {
     if (key == variable_no)
     {
-      Serial.println("le button D a été cliquer");
       function_valeurCode(touchValeur);
     }
     else
     {
       touchValeur += key;
       Serial.println(touchValeur);
+    }
+    // reset
+    if (key == variable_reset)
+    {
+      Serial.println("reset");
+      touchValeur = "";
     }
   }
 }
@@ -81,7 +88,7 @@ void function_valeurCode(String code)
   {
     if (code == ValeurCode)
     {
-      Serial.println("code correspondant");
+      function_open();
     }
     else
     {
@@ -104,3 +111,24 @@ void executers(String text)
   lcd.setCursor(5, 0); // Colonne 5, ligne 0
   lcd.print(text);
 }
+
+void function_open()
+{
+  executers("OUVERT !");
+  digitalWrite(red, LOW);
+  digitalWrite(vert, HIGH);
+  delay(4000);
+  executers("attention !");
+  digitalWrite(vert, LOW);
+  digitalWrite(orange, HIGH);
+  delay(2000);
+  digitalWrite(orange, LOW);
+  digitalWrite(red, HIGH);
+  executers("Fermer !");
+  touchValeur = "";
+}
+
+// #define red 13
+// #define orange 12
+// #define vert 11
+// #define button 10;
