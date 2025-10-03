@@ -1,6 +1,6 @@
 # Projet Arduino - Feux de signalisation avec affichage LCD
 
-Ce projet Arduino met en œuvre un système de gestion de feux de signalisation avec un affichage sur un écran LCD. Il utilise trois LED (rouge, jaune, verte) pour simuler un feu tricolore, ainsi qu’un écran LCD pour afficher l’état actuel du feu.
+Ce projet Arduino met en œuvre un système de gestion de feux de signalisation avec un affichage sur un écran LCD. Il utilise trois LED (rouge, jaune, verte) pour simuler un feu tricolore, ainsi qu’un écran LCD pour afficher l’état actuel du feu.......
 
 ## Schéma de câblage
 
